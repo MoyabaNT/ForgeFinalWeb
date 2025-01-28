@@ -21,7 +21,7 @@ const Sidebar = () => {
     { title: 'Services', Icon: GrServices, href: 'Services' },
     { title: 'Resources', Icon: FiTool, href: 'Resources' },
     { title: 'Contact Us', Icon: HiOutlineChatBubbleBottomCenterText, href: 'Contacts' },
-    { title: 'About Us', Icon: RiTeamFill, href: 'AboutUs' },
+    { title: 'About Us', Icon: RiTeamFill, href: 'About' },
   ]
 
   return (

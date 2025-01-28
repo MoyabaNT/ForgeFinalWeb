@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       <div className="mt-16">
-        <h1 className="text-center text-3xl p-6 font-bold hover:underline text-purple-700">
+        <h1 className="text-center text-3xl p-6 font-bold text-purple-700">
           About Us
         </h1>
         <div className="flex justify-center">
