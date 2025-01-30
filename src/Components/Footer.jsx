@@ -47,7 +47,6 @@ const Footer = () => {
     <div>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 justify-center bg-gradient-to-b from-gray-100 to-gray-300 p-8'>
             <div className='px-16'>
-                <h1 className='text-xl py-4 ml-16 md:ml-20 lg:ml-20 font-bold text-purple-700 '>ThinkFriday</h1>
                 <div className="text-center lg:ml-16">
                 <h3 className="text-purple-700 text-lg font-semibold">Our Address</h3>
                 <p className="text-gray-600 mb-4">Unit 8, Northlands Retail Park, 210 Epsom Ave, Hoogland, Northriding, 2169</p>

@@ -18,9 +18,9 @@ const Contacts = () => {
         <form
          action="https://getform.io/f/azyyvogb"
           method="POST"
-          className="flex flex-col w-full max-w-sm md:max-w-md bg-gray-300 p-6 shadow-lg rounded-lg"
+          className="flex flex-col w-full max-w-sm md:max-w-md bg-gray-300 p-6 shadow-md rounded-lg shadow-purple-700 "
         >
-          <h2 className="text-purple-700 text-xl font-semibold mb-4">Hello</h2>
+          <h2 className="text-purple-700 text-xl font-semibold mb-4">Hello :)</h2>
           <input
             type="text"
             name="name"

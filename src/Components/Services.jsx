@@ -18,22 +18,22 @@ const Services = () => {
       <div className='flex justify-center'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
           <Link to='/BBBEE'>
-          <div className='bg-slate-00 rounded-lg p-4 w-80 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-            <GiStairsGoal size={120} className='ml-16 text-purple-700'/>
+          <div className=' shadow-purple-700 bg-slate-00 rounded-xl p-4 w-80 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
+            <GiStairsGoal size={120} className='ml-16 text-purple-700 hover:animate-bounce hover:[animation-duration:6s]'/>
             <h1 className='text-3xl font-bold mb-6 mt-4 hover:text-purple-700'>B-BBEE Advisory & Consulting</h1>
             <p>We assist clients to achieve their desired level of B-BBEE compliance in the most efficient and cost-effective manner with the least disruption to their business. We provide comprehensive services to support our client’s business by leveraging strategies, legislation, and best practices to ensure Growth and Return on Investment (ROI).</p>
           </div>
           </Link>
           <Link to='/HumanRsc'>
-          <div className='bg-slate-00 rounded-lg p-4 w-80 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-            <GrUserWorker size={120} className='ml-16 text-purple-700'/>
+          <div className=' shadow-purple-700 bg-slate-00 rounded-xl p-4 w-80 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
+            <GrUserWorker size={120} className='ml-16 text-purple-700 hover:animate-bounce hover:[animation-duration:6s]'/>
             <h1 className='text-3xl font-bold mb-6 mt-4 hover:text-purple-700'>Human Resources (HR) ConsultingS</h1>
             <p>We provide Human Resources (HR) Consulting services that form an integral asset to our client’s HR team. By creating and implementing bespoke HR strategies, we work to ensure the organisation is effectively utilizing its personnel to achieve its goals, while working at optimal performance and efficiency levels.</p>
           </div>
           </Link>
           <Link to='/SkillsDev'>
-          <div className='bg-slate-00 rounded-lg p-4 w-80 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
-            <LiaLaptopCodeSolid size={120} className='ml-16 text-purple-700'/>
+          <div className='shadow-purple-700 bg-slate-00 rounded-lg p-4 w-80 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
+            <LiaLaptopCodeSolid size={120} className='ml-16 text-purple-700 hover:animate-bounce hover:[animation-duration:6s]'/>
             <h1 className='text-3xl font-bold mb-6 mt-4 hover:text-purple-700'>Skills Develoment Consulting</h1>
             <p className='py-3'>We provide Skills Development Consulting services that are designed to maximize the effect of B-BBEE Strategies within our client’s organisation. We align training and development to strategic business objectives and ensure increased Return on Investment (ROI) in training initiatives.</p>
           </div>
