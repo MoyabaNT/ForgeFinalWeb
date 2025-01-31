@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { FaLinkedin } from "react-icons/fa6";
 import b261 from '../Assets/Aboutusimg/b261.png';
 import b262 from '../Assets/Aboutusimg/b262.png';
-import lilan from '../Assets/Aboutusimg/lilan.jpg';
+import lilan from '../Assets/Aboutusimg/lil.png';
 import sudhir from '../Assets/Aboutusimg/Sudhir.jpg';
 import spons from '../Assets/Aboutusimg/spons.jpg';
 import vesh from '../Assets/Aboutusimg/vesh.jpg';
@@ -87,9 +87,10 @@ const About = () => {
               </div>
       </div>
       {/**The team side */}
-      <div className="p-32 lg:ml-64 sm:ml-8">
+      <div className=" lg:ml-64 sm:ml-8">
   <h3 className="text-lg text-center lg:mr-48 text-purple-700 font-bold p-8">Team</h3>
-  <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+  
+  <div className="grid grid-cols-1 md:grid-cols-4 gap-8 p-8 items-center">
     <div className="bg-gray-200 shadow-md p-4 rounded-2xl shadow-purple-700 w-60 mx-auto">
       <img 
         src={b262} 
@@ -97,14 +98,14 @@ const About = () => {
         className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
       />
       <label className="text-sm text-purple-700 font-bold">Tariq Shurmah</label>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-4 items-center">
         <Link to="https://www.linkedin.com/in/tariq-shurmah-91b1a533/" target="_blank">
           <FaLinkedin size={35} className="hover:text-blue-900" />
         </Link>
         <p className="text-xs">Co-Founder and Managing Director</p>
       </div>
     </div>
-    <div className="bg-gray-200 shadow-md p-4 rounded-2xl shadow-purple-700 w-60 mx-auto">
+    <div className="bg-gray-200 shadow-md  p-4 rounded-2xl shadow-purple-700 w-60 mx-auto">
       <img 
         src={b261} 
         alt="Forge Partner 2" 
@@ -122,7 +123,7 @@ const About = () => {
       <img 
         src={lilan} 
         alt="Forge worker 3" 
-        className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
+        className="w-auto md:w-60 h-54 object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
       />
       <label className="text-sm text-purple-700 font-bold">Lilian Mathuntuta</label>
       <div className="flex gap-2 items-center">
@@ -133,7 +134,7 @@ const About = () => {
       </div>
     </div>
   </div>
-  <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center mt-12">
+  <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center p-8">
     <div className="bg-gray-200 shadow-md p-4 rounded-2xl shadow-purple-700 w-60 mx-auto">
       <img 
         src={sudhir} 

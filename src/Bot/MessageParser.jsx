@@ -12,6 +12,8 @@ class MessageParser {
         this.actionProvider.handleServices();
       } else if(lowerCaseMessage.includes("website")){
         this.actionProvider.handleAboutUs();
+      } else if(lowerCaseMessage.includes("company")){
+        this.actionProvider.handleAboutUs();
       } else if(lowerCaseMessage.includes("bbbee")){
         this.actionProvider.handleBBBEE();
       } else if(lowerCaseMessage.includes("resources")){

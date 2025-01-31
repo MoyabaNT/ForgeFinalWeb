@@ -5,10 +5,11 @@ import { useClickAway } from 'react-use' //had to npm i react-use
 import { LiaHandPointLeft } from "react-icons/lia";
 import { BiHomeSmile } from 'react-icons/bi'
 import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
-import { FiTool } from "react-icons/fi";
-import { GrServices } from "react-icons/gr";
 import { RiTeamFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+import { SiBloglovin } from "react-icons/si";
+import { MdOutlineDriveFileMove } from "react-icons/md";
+import { IoBriefcaseOutline } from "react-icons/io5";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false) //useState is used to track UI changes in the DOM
@@ -18,9 +19,9 @@ const Sidebar = () => {
 
   const items = [
     { title: 'Home', Icon: BiHomeSmile, href: 'Home' },
-    { title: 'Services', Icon: GrServices, href: 'Services' },
-    { title: 'Resources', Icon: FiTool, href: 'Resources' },
-    { title: 'Blog', Icon: FiTool, href: 'BlogPage' },
+    { title: 'Services', Icon: MdOutlineDriveFileMove, href: 'Services' },
+    { title: 'Resources', Icon: IoBriefcaseOutline, href: 'Resources' },
+    { title: 'Blog', Icon: SiBloglovin, href: 'BlogPage' },
     { title: 'Contact Us', Icon: HiOutlineChatBubbleBottomCenterText, href: 'Contacts' },
     { title: 'About Us', Icon: RiTeamFill, href: 'About' },
   ]
@@ -28,7 +29,7 @@ const Sidebar = () => {
   return (
     <div className='bg-gray-300 h-16 fixed top-0 left-0 right-0 z-50'>
       <div className="absolute top-0 right-0">
-        <Link to='/HomePage'>
+        <Link to='/Home'>
           <img 
             src={Logo} 
             alt="Logo" 
@@ -37,9 +38,32 @@ const Sidebar = () => {
         </Link>
       </div>
   
+      {/**Nav bar */}
+      <div className='hidden sm:block  '>
+      <ul className='flex fixed top-0 left-0 gap-8 p-4 '>
+              {items.map((item) => {
+                const { title, href } = item;
+                return (
+                  <li
+                    key={title}
+                    className="inline-block transform transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  >
+                    <a
+                      href={href}
+                      className="hover:text-purple-700 hover:font-bold"
+                      >
+                        <span>{title}</span>
+                      </a>
+                  </li>
+                );
+              })}
+            </ul>
+
+      </div>
+
       <button
         onClick={toggleSidebar}
-        className='p-3 text-purple-700'
+        className='sm:hidden block p-3 text-purple-700'
         aria-label='toggle sidebar'
       >
         <CiCircleList size={30} />

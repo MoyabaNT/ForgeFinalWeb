@@ -61,8 +61,8 @@ const Footer = () => {
                 Useful Links
                 </h1>
                 <ul className=''>
-                    <Link to='/AboutUs'><li className='p-2 hover:text-purple-700 hover:font-bold'>About Us</li></Link>
-                    <Link  to='/OurServices'><li className='p-2 hover:text-purple-700 hover:font-bold'>Services</li></Link>
+                    <Link to='/About'><li className='p-2 hover:text-purple-700 hover:font-bold'>About Us</li></Link>
+                    <Link  to='/Services'><li className='p-2 hover:text-purple-700 hover:font-bold'>Services</li></Link>
                     <Link to='/Contacts'><li className='p-2 hover:text-purple-700 hover:font-bold'>Contact Us</li></Link>
                     <Link to='/Resources'><li className='p-2 hover:text-purple-700 hover:font-bold'>Resources</li></Link>
                 </ul>
