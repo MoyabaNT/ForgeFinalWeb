@@ -17,9 +17,10 @@ const Sidebar = () => {
   const toggleSidebar = () => setOpen(prev => !prev)
 
   const items = [
-    { title: 'HomePage', Icon: BiHomeSmile, href: 'HomePage' },
+    { title: 'Home', Icon: BiHomeSmile, href: 'Home' },
     { title: 'Services', Icon: GrServices, href: 'Services' },
     { title: 'Resources', Icon: FiTool, href: 'Resources' },
+    { title: 'Blog', Icon: FiTool, href: 'BlogPage' },
     { title: 'Contact Us', Icon: HiOutlineChatBubbleBottomCenterText, href: 'Contacts' },
     { title: 'About Us', Icon: RiTeamFill, href: 'About' },
   ]

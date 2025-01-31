@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div>
 
-    <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen">
+    <div className="bg-gradient-to-b from-gray-300 via-gray-200 to-gray-300 min-h-screen">
       <div className="text-purple-700">
         <Sidebar />
       </div>
@@ -26,7 +26,7 @@ const About = () => {
         <h1 className="text-center text-3xl p-6 font-bold text-purple-700">
           About Us
         </h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center p-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Why Us */}
             <div className="bg-slate-00 rounded-full shadow-lg shadow-purple-700 p-6 w-80 h-80  flex items-center justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 sm:animate-bounce animate-none sm:[animation-duration:6s] hover:animate-none">

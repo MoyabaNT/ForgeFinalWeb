@@ -5,7 +5,7 @@ const Contacts = () => {
   return (
     <div>
 
-    <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen flex flex-col">
+    <div className="bg-gradient-to-b from-gray-300 via-gray-200 to-gray-300 min-h-screen flex flex-col">
       {/* Sidebar */}
       <div className='text-purple-700'>
         <Sidebar />
@@ -13,12 +13,12 @@ const Contacts = () => {
       <h1 className='text-center font-bold text-purple-700 text-2xl'>Contact Us</h1>
 
       {/* Main content */}
-      <div className="flex flex-col md:flex-row items-center justify-center p-6 gap-14">
+      <div className="flex flex-col md:flex-row items-center justify-center p-12 gap-14">
         {/* Form Section */}
         <form
          action="https://getform.io/f/azyyvogb"
           method="POST"
-          className="flex flex-col w-full max-w-sm md:max-w-md bg-gray-300 p-6 shadow-md rounded-lg shadow-purple-700 "
+          className="flex flex-col w-full max-w-sm md:max-w-md bg-gradient-to-b from-gray-300 to-gray-200 p-6 hover:shadow-md rounded-lg hover:shadow-purple-700 "
         >
           <h2 className="text-purple-700 text-xl font-semibold mb-4">Hello :)</h2>
           <input
