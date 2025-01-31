@@ -2,8 +2,7 @@ import { useRef, useState } from 'react'
 import Logo from '../Assets/Purple.png';
 import { CiCircleList } from "react-icons/ci";
 import { useClickAway } from 'react-use' //had to npm i react-use
-import { LiaHandPointLeft } from "react-icons/lia";
-import { BiHomeSmile } from 'react-icons/bi'
+import { IoArrowBackCircleOutline } from "react-icons/io5";import { BiHomeSmile } from 'react-icons/bi'
 import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
 import { RiTeamFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
@@ -19,15 +18,15 @@ const Sidebar = () => {
 
   const items = [
     { title: 'Home', Icon: BiHomeSmile, href: 'Home' },
+    { title: 'About Us', Icon: RiTeamFill, href: 'About' },
     { title: 'Services', Icon: MdOutlineDriveFileMove, href: 'Services' },
     { title: 'Resources', Icon: IoBriefcaseOutline, href: 'Resources' },
     { title: 'Blog', Icon: SiBloglovin, href: 'BlogPage' },
     { title: 'Contact Us', Icon: HiOutlineChatBubbleBottomCenterText, href: 'Contacts' },
-    { title: 'About Us', Icon: RiTeamFill, href: 'About' },
   ]
 
   return (
-    <div className='bg-gray-300 h-16 fixed top-0 left-0 right-0 z-50'>
+    <div className='bg-gray-300 h-16 fixed top-0 left-0 right-0 z-50 shadow-sm'>
       <div className="absolute top-0 right-0">
         <Link to='/Home'>
           <img 
@@ -82,10 +81,9 @@ const Sidebar = () => {
             <div className='items-center justify-between p-5 border-b-2 border-gray-700'>
               <button
                 onClick={toggleSidebar}
-                className="p-3 border-2 border-gray-700 rounded-full"
                 aria-label="close sidebar"
               >
-                <LiaHandPointLeft size={25} />
+                <IoArrowBackCircleOutline size={40} />
               </button>
   
               <div>

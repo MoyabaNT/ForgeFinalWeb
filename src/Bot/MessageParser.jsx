@@ -30,7 +30,11 @@ class MessageParser {
         this.actionProvider.handleVision();
       } else if(lowerCaseMessage.includes("mission")){
         this.actionProvider.handleMission();
-      } 
+      } else if(lowerCaseMessage.includes("ceo")){
+        this.actionProvider.handleTeam();
+      } else if(lowerCaseMessage.includes("thinkfriday")){
+        this.actionProvider.handleAboutUs();
+      }
       else {
         this.actionProvider.handleUnknown();
       }

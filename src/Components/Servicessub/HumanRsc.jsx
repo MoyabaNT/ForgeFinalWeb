@@ -13,7 +13,7 @@ const HumanRsc = () => {
       {/** Main Section */}
       <div className="flex-grow flex items-center justify-center">
         <div className="bg-gray-300 rounded-lg shadow-md p-8 max-w-3xl w-full text-center">
-          <h1 className="text-2xl font-bold text-purple-700 mb-6">
+          <h1 className="text-2xl font-bold text-purple-700 mt-4">
           Human Resource (HR) Consulting
           </h1>
           <ul className="text-left list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400 mb-6">
